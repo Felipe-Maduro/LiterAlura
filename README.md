@@ -24,6 +24,7 @@ Catálogo de livros em linha de comando, feito em Java 17 + Spring Boot.
 git clone https://github.com/SEU_USUARIO/LiterAlura.git
 cd LiterAlura
 mvn clean spring-boot:run
+```
 
 Feito por Felipe Maduro.
 
