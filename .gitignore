@@ -1,34 +1,51 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ─── Build do Maven ────────────────────────────────────────────────────────────
+/target/
+/*.jar
+/*.war
 
-### STS ###
-.apt_generated
+# ─── Wrapper do Maven ──────────────────────────────────────────────────────────
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
+
+# ─── Configurações locais / Secrets ────────────────────────────────────────────
+# Se você tiver credenciais em application.properties, descomente a linha abaixo.
+/application.properties
+.env
+
+# ─── IDEs e editores ───────────────────────────────────────────────────────────
+# IntelliJ IDEA
+/.idea/
+/*.iml
+/*.iws
+/*.ipr
+
+# Eclipse / Spring Tool Suite
 .classpath
-.factorypath
 .project
-.settings
+.settings/
+.apt_generated
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
+# NetBeans
+/nbproject/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# VS Code
+/.vscode/
 
+# ─── Logs e arquivos temporários ───────────────────────────────────────────────
+*.log
+*.tmp
+
+# ─── Sistema operacional ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Outros ────────────────────────────────────────────────────────────────────
+# Arquivos de pacote (caso queira manter algum .zip, .tar, etc)
+/*.zip
+/*.tar.gz
